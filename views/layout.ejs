@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Node Website</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">     
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-inverse navbar-top">
+                <a href="/" class="navbar-brand">Homepage</a>
+                <a href="/about" class="navbar-brand">About Us</a>
+                <a href="/contact" class="navbar-brand">Contact Us</a>
+            </nav>
+        </header>
+
+        <!--Main Content-->
+        <%- defineContent('hero') %>
+
+        <main>
+            <div class="container">
+        <%- body %>
+            </div>
+        </main>
+
+        <footer>
+            Made with &#9829; Copyright &copy. 2017 
+        </footer>
+    </body>
+</html>
